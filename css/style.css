@@ -19,15 +19,18 @@ html {
   top: 0;
   z-index: 100;
   width: auto;
-  justify-self: flex-end;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(117, 12, 10, 0.9));
   border-bottom: 3px solid white;
   /*--Barras de Navegacion-- */
-  /* --------REDES--------- */
+}
+
+.navBarMovible .logoBarra {
+  padding: 0;
+  width: 8rem;
+  height: 8rem;
 }
 
 .navBarMovible .navBarMovible__barra {
-  order: -2;
   align-self: center;
 }
 
@@ -65,19 +68,20 @@ html {
   background-color: #770c0a;
 }
 
-.navBarMovible .navBarMovible__redesSociales {
+/* --------REDES--------- */
+footer .navBarMovible__redesSociales {
   display: flex;
   justify-content: flex-end;
   align-content: center;
 }
 
-.navBarMovible .navBarMovible__redesSociales a img {
+footer .navBarMovible__redesSociales a img {
   transition: all 0.3s;
   width: 4.5rem;
   margin: 0.5rem 0.3rem;
 }
 
-.navBarMovible .navBarMovible__redesSociales a img:hover {
+footer .navBarMovible__redesSociales a img:hover {
   transform: scale(1.1);
 }
 
@@ -493,20 +497,16 @@ body {
   width: auto;
   color: white;
   overflow-x: hidden;
-  background-image: linear-gradient(black, #6b6b6b);
+  background-color: black;
 }
 
 /* Estilos para FOOTERS */
-footer {
+footer p {
   width: auto;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(rgba(129, 129, 129, 0.4), rgba(0, 0, 0, 0.6));
-}
-
-footer p {
   color: white;
-  text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   margin: 0;
