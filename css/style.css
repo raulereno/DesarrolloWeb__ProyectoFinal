@@ -488,13 +488,20 @@ footer .redesSociales {
   justify-content: space-around;
 }
 
+footer .redesSociales a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5;
+  font-size: 1.5rem;
+}
+
 footer .redesSociales a img {
   transition: all 0.3s;
   width: 4rem;
   margin: 0.5rem 0.3rem;
 }
 
-footer .redesSociales a img:hover {
+footer .redesSociales a:hover {
   transform: scale(1.1);
 }
 
