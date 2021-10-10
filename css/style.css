@@ -299,9 +299,12 @@ html {
 }
 
 .servicios img {
+  background-color: #6b6b6b;
   width: 30rem;
+  padding: 1rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  border-radius: 15px;
 }
 
 .servicios .servicios__titulosH1 {
@@ -456,7 +459,7 @@ html {
   font-weight: 400;
   font-size: 5rem;
   text-decoration: none;
-  color: black;
+  color: white;
   transition: 1s;
 }
 
