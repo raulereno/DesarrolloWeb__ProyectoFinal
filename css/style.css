@@ -29,6 +29,10 @@ html {
   height: 8rem;
 }
 
+.navBarMovible .navBarMovible__barra {
+  display: flex;
+}
+
 .navBarMovible .navBarMovible__barra .navBarMovible__botonMenuHamburguesa {
   background-color: white;
   font-size: 2rem;
@@ -73,9 +77,56 @@ html {
   border-bottom: 3px solid rgba(0, 0, 0, 0.7);
 }
 
-.header .header__logo {
-  width: 90rem;
-  height: auto;
+.header .banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .banner p,
+.header .banner span {
+  font-size: 7rem;
+  text-align: center;
+  font-family: Aleo;
+  font-weight: 300;
+}
+
+.header .banner .caja-blanca {
+  background-color: black;
+  height: 9rem;
+  width: 48rem;
+  align-self: center;
+  margin-bottom: 9px;
+}
+
+.header .banner:hover .maquina-escribir {
+  visibility: visible;
+}
+
+.header .banner .maquina-escribir {
+  color: white;
+  background-color: black;
+  position: relative;
+  visibility: hidden;
+  padding-left: 2.5rem;
+}
+
+.header .banner .maquina-escribir::after {
+  content: "";
+  border-left: 3px solid #770c0a;
+  background-color: black;
+  right: 0;
+  height: 105%;
+  position: absolute;
+  animation: maquinaescribir 3s infinite alternate steps(17);
+}
+
+@keyframes maquinaescribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
 
 /*-------------- FIN HEADERS------------ */
@@ -494,12 +545,11 @@ footer .redesSociales {
 footer .redesSociales a {
   text-decoration: none;
   color: white;
-  transition: all 0.5;
   font-size: 1.5rem;
+  transition: all 2s;
 }
 
 footer .redesSociales a img {
-  transition: all 0.3s;
   width: 4rem;
   margin: 0.5rem 0.3rem;
 }

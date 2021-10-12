@@ -12,7 +12,8 @@
     }
     /*--Barras de Navegacion-- */
     .navBarMovible__barra {
-       
+        display: flex;
+        
         .navBarMovible__botonMenuHamburguesa {
             background-color: white;
             font-size: 2rem;
@@ -62,10 +63,52 @@
     background-repeat: repeat-x;
     border-bottom: 3px solid rgba(0, 0, 0, .7);
 
-    .header__logo {
-        width: 90rem;
-        height: auto;
+    .banner {
+        display: flex;
+        flex-direction: column;
+        
+        p,
+        span {
+            font-size: 7rem;
+            text-align: center;
+            font-family: Aleo;
+            font-weight: 300;
+        }
+        .caja-blanca{
+            background-color: black;
+            height: 9rem;
+            width: 48rem;
+            align-self: center;
+            margin-bottom: 9px;
+        }
+        &:hover .maquina-escribir{
+            visibility: visible;
+        }
+        .maquina-escribir{
+            color:white;
+            background-color: black;
+            position: relative;
+            visibility: hidden;
+            padding-left: 2.5rem;
+             
+            &::after{
+                content: "";
+                border-left: 3px solid #770c0a;
+                background-color: black;
+                right: 0;
+                height: 105%;
+                position: absolute;
+                animation: maquinaescribir 3s infinite alternate steps(17);
+            }            
+        }
     }
 }
-
+@keyframes maquinaescribir{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
 /*-------------- FIN HEADERS------------ */
