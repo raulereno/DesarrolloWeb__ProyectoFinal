@@ -167,75 +167,56 @@ html {
 /*---------------------------*/
 /*--------- SOBRE MI ------- */
 .containerSobreMi {
-  margin-bottom: 3rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 4fr 1fr 3fr 3fr;
-  grid-template-areas: " titulo1 titulo1 titulo1 titulo1" " imagen1 imagen1 texto1 texto1" " titulo2 titulo2 titulo2   .  " " imagen2 . imagen3 ." " . imagen4 . imagen5";
-  align-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .containerSobreMi .containerSobreMi__titulo {
-  grid-area: titulo1;
   height: 4.5rem;
-  width: 95%;
+  width: 90%;
   font-size: 4rem;
   padding-left: 2rem;
-  justify-self: center;
-  align-self: center;
   border-radius: 5px;
+  align-self: center;
+  margin: 3rem 0;
 }
 
-.containerSobreMi .containerSobreMi__parrafoSobreMi {
-  width: 91%;
-  grid-area: texto1;
-  justify-self: center;
+.containerSobreMi .containerSobreMi__seccionUno {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.containerSobreMi .containerSobreMi__seccionUno .seccionUno__parrafoSobreMi {
+  width: 46%;
+  margin-left: 3rem;
   align-self: center;
 }
 
-.containerSobreMi .containerSobreMi__fotosMias {
-  align-self: center;
-  justify-self: flex-end;
-  grid-area: imagen1;
+.containerSobreMi .containerSobreMi__seccionUno .seccionUno__fotosMias {
+  width: 40%;
   transition: all 1.5s;
   border: 4px solid rgba(66, 8, 7, 0.7);
 }
 
-.containerSobreMi .containerSobreMi__fotosMias:hover {
+.containerSobreMi .containerSobreMi__seccionUno .seccionUno__fotosMias:hover {
   border: 4px solid white;
 }
 
 .containerSobreMi .containerSobreMi__tituloHobbies {
-  grid-area: titulo2;
-  justify-self: flex-end;
   align-self: center;
   background-color: #9b3737;
   width: 60%;
   font-size: 4rem;
   padding-left: 6rem;
   color: white;
+  margin-bottom: 3rem;
 }
 
-.containerSobreMi .containerSobreMi__imagenesRepresentativasDos {
-  grid-area: imagen2;
-}
-
-.containerSobreMi .containerSobreMi__imagenesRepresentativasTres {
-  grid-area: imagen3;
-}
-
-.containerSobreMi .containerSobreMi__imagenesRepresentativasCuatro {
-  grid-area: imagen4;
-}
-
-.containerSobreMi .containerSobreMi__imagenesRepresentativasCinco {
-  grid-area: imagen5;
-}
-
-.containerSobreMi .containerSobreMi__imagenesRepresentativasDos,
-.containerSobreMi .containerSobreMi__imagenesRepresentativasTres,
-.containerSobreMi .containerSobreMi__imagenesRepresentativasCuatro,
-.containerSobreMi .containerSobreMi__imagenesRepresentativasCinco {
+.containerSobreMi .containerBasquet__imgBasquet,
+.containerSobreMi .containerDispositivos__imgDispositivos,
+.containerSobreMi .containerTrekking__imgTrekking,
+.containerSobreMi .containerDeporte__imgDeporte {
   height: 25rem;
   background-image: radial-gradient(white, black);
   border-radius: 2rem;
@@ -243,12 +224,77 @@ html {
   transition: all 2s;
 }
 
-.containerSobreMi .containerSobreMi__imagenesRepresentativasDos:hover,
-.containerSobreMi .containerSobreMi__imagenesRepresentativasTres:hover,
-.containerSobreMi .containerSobreMi__imagenesRepresentativasCuatro:hover,
-.containerSobreMi .containerSobreMi__imagenesRepresentativasCinco:hover {
+.containerSobreMi .containerBasquet__imgBasquet:hover, .containerSobreMi .containerBasquet__imgBasquet:hover, .containerSobreMi .containerBasquet__imgBasquet:hover, .containerSobreMi .containerBasquet__imgBasquet:hover,
+.containerSobreMi .containerDispositivos__imgDispositivos:hover,
+.containerSobreMi .containerDispositivos__imgDispositivos:hover,
+.containerSobreMi .containerDispositivos__imgDispositivos:hover,
+.containerSobreMi .containerDispositivos__imgDispositivos:hover,
+.containerSobreMi .containerTrekking__imgTrekking:hover,
+.containerSobreMi .containerTrekking__imgTrekking:hover,
+.containerSobreMi .containerTrekking__imgTrekking:hover,
+.containerSobreMi .containerTrekking__imgTrekking:hover,
+.containerSobreMi .containerDeporte__imgDeporte:hover,
+.containerSobreMi .containerDeporte__imgDeporte:hover,
+.containerSobreMi .containerDeporte__imgDeporte:hover,
+.containerSobreMi .containerDeporte__imgDeporte:hover {
   transform: scale(1.1);
   border: 4px solid white;
+}
+
+.containerSobreMi div {
+  margin-bottom: 3rem;
+  width: 100%;
+  display: flex;
+}
+
+.containerSobreMi div .containerSobreMi__containerDispositivos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerSobreMi div .containerSobreMi__containerDispositivos .containerDispositivos__cita-tecnologia {
+  align-self: center;
+}
+
+.containerSobreMi div .containerSobreMi__containerBasquet {
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerSobreMi div .containerSobreMi__containerBasquet .containerBasquet__cita-basquet {
+  align-self: center;
+}
+
+.containerSobreMi div {
+  display: flex;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.containerSobreMi div .containerSobreMi__containerTrekking {
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerSobreMi div .containerTrekking__cita-senderismo {
+  align-self: center;
+}
+
+.containerSobreMi div .containerSobreMi__containerDeporte {
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerSobreMi div .containerSobreMi__containerDeporte .containerDeporte__cita-deporte {
+  align-self: center;
+}
+
+.containerSobreMi .containerDispositivos__cita-tecnologia,
+.containerSobreMi .containerTrekking__cita-senderismo,
+.containerSobreMi .containerDeporte__cita-deporte,
+.containerSobreMi .containerBasquet__cita-basquet {
+  font-size: 2rem;
+  width: 40%;
 }
 
 /* ------------------------------------ */
