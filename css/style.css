@@ -33,6 +33,11 @@ html {
   display: flex;
 }
 
+.navBarMovible .navBarMovible__barra #navbarNav {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .navBarMovible .navBarMovible__barra .navBarMovible__botonMenuHamburguesa {
   background-color: white;
   font-size: 2rem;
@@ -252,8 +257,15 @@ html {
   justify-content: space-around;
 }
 
+.containerSobreMi div .containerSobreMi__containerDispositivos:hover .containerDispositivos__cita-tecnologia {
+  opacity: 1;
+}
+
 .containerSobreMi div .containerSobreMi__containerDispositivos .containerDispositivos__cita-tecnologia {
   align-self: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s linear;
 }
 
 .containerSobreMi div .containerSobreMi__containerBasquet {
@@ -261,8 +273,15 @@ html {
   justify-content: space-around;
 }
 
+.containerSobreMi div .containerSobreMi__containerBasquet:hover .containerBasquet__cita-basquet {
+  opacity: 1;
+}
+
 .containerSobreMi div .containerSobreMi__containerBasquet .containerBasquet__cita-basquet {
   align-self: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s linear;
 }
 
 .containerSobreMi div {
@@ -276,8 +295,15 @@ html {
   justify-content: space-around;
 }
 
-.containerSobreMi div .containerTrekking__cita-senderismo {
+.containerSobreMi div .containerSobreMi__containerTrekking:hover .containerTrekking__cita-senderismo {
+  opacity: 1;
+}
+
+.containerSobreMi div .containerSobreMi__containerTrekking .containerTrekking__cita-senderismo {
   align-self: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s linear;
 }
 
 .containerSobreMi div .containerSobreMi__containerDeporte {
@@ -285,8 +311,15 @@ html {
   justify-content: space-around;
 }
 
+.containerSobreMi div .containerSobreMi__containerDeporte:hover .containerDeporte__cita-deporte {
+  opacity: 1;
+}
+
 .containerSobreMi div .containerSobreMi__containerDeporte .containerDeporte__cita-deporte {
   align-self: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s linear;
 }
 
 .containerSobreMi .containerDispositivos__cita-tecnologia,

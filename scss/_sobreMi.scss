@@ -59,27 +59,38 @@
             transform: scale(1.1);
             border: 4px solid white;
         }
-
     }
 
     div{
         margin-bottom: 3rem;
         width: 100%;
         display: flex;
+        
         .containerSobreMi__containerDispositivos{
             display: flex;
             justify-content: space-around;
-            
+            &:hover .containerDispositivos__cita-tecnologia{
+                opacity: 1;
+            }
+
             .containerDispositivos__cita-tecnologia{
                 align-self: center;
+                text-align: center;
+                opacity:0;
+                transition:opacity 1s linear;
             }
         }
         .containerSobreMi__containerBasquet{
             display: flex;
             justify-content: space-around;
-            
+            &:hover .containerBasquet__cita-basquet {
+                opacity: 1;
+            }
             .containerBasquet__cita-basquet{
                 align-self: center;
+                text-align: center;
+                opacity:0;
+                transition:opacity 1s linear;
             }
         }
     }
@@ -91,17 +102,33 @@
         .containerSobreMi__containerTrekking{
             display: flex;
             justify-content: space-around;
+
+            &:hover .containerTrekking__cita-senderismo{
+                opacity: 1;
+            }
+            
+            .containerTrekking__cita-senderismo{
+                align-self: center;
+                text-align: center;
+                opacity:0;
+                transition:opacity 1s linear;
+            }
         }
 
-        .containerTrekking__cita-senderismo{
-            align-self: center;
-        }
+       
         .containerSobreMi__containerDeporte{
             display: flex;
             justify-content: space-around;
-            
+
+            &:hover .containerDeporte__cita-deporte{
+                opacity: 1;
+            }
+
             .containerDeporte__cita-deporte{
                 align-self: center;
+                text-align: center;
+                opacity:0;
+                transition:opacity 1s linear;
             }
         }
     }
@@ -113,6 +140,8 @@
         width: 40%;
     }
     
+
+
 }
 
 
