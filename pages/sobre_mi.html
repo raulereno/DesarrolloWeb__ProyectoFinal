@@ -36,7 +36,8 @@
 <body>
   <div class="container-fluid navBarMovible" id="arriba">
     <div class="row containerHeader">
-      <div class="col-4"><a href="index.html"><img src="../images/Imagen1-cortada.png" alt="" class="logoNavBar"></a></div>
+      <div class="col-4"><a href="index.html"><img src="../images/Imagen1-cortada.png" alt="" class="logoNavBar"></a>
+      </div>
       <nav class="col-8 navbar navbar-expand-lg navbar-light navBarMovible__barra">
         <div class="container-fluid">
           <button class="navbar-toggler navBarMovible__botonMenuHamburguesa" type="button" data-bs-toggle="collapse"
@@ -70,7 +71,9 @@
     <div class="row">
       <div class="col-12">
         <div class="banner">
-          <p>Soy</p>  <div class="caja-blanca"><span class="maquina-escribir">&ltRaúl Ereño&gt .</span></div><p>Desarrollador Web</p>
+          <p>Soy</p>
+          <div class="caja-blanca"><span class="maquina-escribir">&ltRaúl Ereño&gt .</span></div>
+          <p>Desarrollador Web</p>
         </div>
       </div>
     </div>
@@ -78,25 +81,48 @@
 
   <section class="containerSobreMi" data-aos="fade-up" data-aos-duration="3000">
     <h1 class="titulosH1 containerSobreMi__titulo">Sobre mi:</h1>
-    <p class="containerSobreMi__parrafoSobreMi">
-      Mi nombre es Raul Ereño, ex-estudiante de Derecho. Soy un amante del deporte y las computadoras, desde chico me
-      intereso la forma en que las personas podían crear diferentes cosas, como juegos, entre otras cosas, solo dándole
-      instrucciones a una computadora, sin saber cómo lo hacían todavía, aunque esta pandemia me hizo interesarme por
-      este mundo y adentrarme más en él.
-    </p>
-    <!-- Carrusel con imagenes propias -->
-    <img src="../images/fotoMia2.png" alt="Foto del Diseñador" class="containerSobreMi__fotosMias">
-    <!-- fin de carrusel -->
+
+    <div class="containerSobreMi__seccionUno">
+      <img src="../images/fotoMia2.png" alt="Foto del Diseñador" class="seccionUno__fotosMias">
+      <p class="seccionUno__parrafoSobreMi">
+        Mi nombre es Raul Ereño, ex-estudiante de Derecho. Soy un amante del deporte y las computadoras, desde chico me
+        intereso la forma en que las personas podían crear diferentes cosas, como juegos, entre otras cosas, solo
+        dándole
+        instrucciones a una computadora, sin saber cómo lo hacían todavía, aunque esta pandemia me hizo interesarme por
+        este mundo y adentrarme más en él.
+      </p>
+
+    </div>
     <h2 class="titulosH2 containerSobreMi__tituloHobbies">Hobbies</h2>
     <!-- Imagenes representativas de hobbies -->
-    <img src="../images/dispositivos.png" alt="Computadoras" class="containerSobreMi__imagenesRepresentativasDos"
-      data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-    <img src="../images/basketball.png" alt="Basketball" class="containerSobreMi__imagenesRepresentativasTres"
-      data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-    <img src="../images/trekking.png" alt="Trekking" class="containerSobreMi__imagenesRepresentativasCuatro"
-      data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-    <img src="../images/gym.png" alt="Ejercicio" class="containerSobreMi__imagenesRepresentativasCinco"
-      data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    <div>
+      <div class="containerSobreMi__containerDispositivos">
+        <img src="../images/dispositivos.png" alt="Dispositivos" class="containerDispositivos__imgDispositivos"
+          data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <p class="containerDispositivos__cita-tecnologia"> "Una máquina puede hacer el trabajo de cincuenta hombres
+          ordinarios. Ninguna máquina puede hacer el trabajo de un hombre extraordinario". <br> Elbert Hubbard</p>
+      </div>
+      <div class="containerSobreMi__containerBasquet">
+        <img src="../images/basketball.png" alt="Basketball" class="containerBasquet__imgBasquet" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <p class="containerBasquet__cita-basquet">"Debes esperar cosas de ti mismo antes de que las puedas hacer".
+          <br>Michael Jordan</p>
+      </div>
+    </div>
+    <div>
+      <div class="containerSobreMi__containerTrekking">
+        <p class="containerTrekking__cita-senderismo">"No hay atajos a ningún lugar que valga la pena ir". <br> Beverly
+          Sills</p>
+        <img src="../images/trekking.png" alt="Trekking" class="containerTrekking__imgTrekking" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+      </div>
+      <div class="containerSobreMi__containerDeporte">
+        <p class="containerDeporte__cita-deporte">"Los campeones no están hechos en el gimnasio. Los campeones están
+          hechos de algo que tienen en su interior, un deseo, un sueño, una visión". <br>Muhammad Ali</p>
+        <img src="../images/gym.png" alt="Ejercicio" class="containerDeporte__imgDeporte" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -105,7 +131,8 @@
           alt="Logo de Instagram" class="img-fluid" />@raulereno</a>
       <a href="https://www.linkedin.com/in/raulereno" target="_blank"> <img src="../images/linkedin.svg"
           alt="Logo de LinkeIn" class="img-fluid" />@raulereno</a>
-          <a href="mailto:raulereno@gmail.com"><img src="../images/gmail.svg" alt="Logo de Gmail" class="img-fluid">raulereno@gmail.com</a>
+      <a href="mailto:raulereno@gmail.com"><img src="../images/gmail.svg" alt="Logo de Gmail"
+          class="img-fluid">raulereno@gmail.com</a>
       <a href="https://api.whatsapp.com/send?phone=+00000000" target="_blank"><img src="../images/whatsapp.svg"
           alt="icono de whatsapp" clase="img-fluid">03624-932863</a>
     </div>
