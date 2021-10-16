@@ -21,6 +21,8 @@ html {
   width: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(117, 12, 10, 0.902));
   border-bottom: 3px solid white;
+  display: flex;
+  justify-content: space-between;
   /*--Barras de Navegacion-- */
 }
 
@@ -31,11 +33,6 @@ html {
 
 .navBarMovible .navBarMovible__barra {
   display: flex;
-}
-
-.navBarMovible .navBarMovible__barra #navbarNav {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .navBarMovible .navBarMovible__barra .navBarMovible__botonMenuHamburguesa {
@@ -558,8 +555,57 @@ html {
 }
 
 /* ---------------------------------- */
-.header__logoError {
-  width: 50rem;
+.header__error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/fondoHeader.jpg);
+  background-repeat: repeat-x;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.7);
+}
+
+.header__error .banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__error .banner p,
+.header__error .banner span {
+  font-size: 4rem;
+  text-align: center;
+  font-family: Aleo;
+  font-weight: 300;
+}
+
+.header__error .banner .caja-blanca {
+  background-color: black;
+  height: 5rem;
+  width: 30rem;
+  align-self: center;
+  margin-bottom: 9px;
+}
+
+.header__error .banner:hover .maquina-escribir {
+  visibility: visible;
+}
+
+.header__error .banner .maquina-escribir {
+  color: white;
+  background-color: black;
+  position: relative;
+  visibility: hidden;
+  padding-left: 2.5rem;
+}
+
+.header__error .banner .maquina-escribir::after {
+  content: "";
+  border-left: 3px solid #770c0a;
+  background-color: black;
+  right: 0;
+  height: 105%;
+  position: absolute;
+  animation: maquinaescribir 3s infinite alternate steps(17);
 }
 
 .footerError {
@@ -575,9 +621,15 @@ html {
   margin: 2rem 0rem 0rem 0rem;
 }
 
-.gifError__img {
-  height: 100%;
-  width: 40rem;
+.cajaError .gifError__img {
+  height: auto;
+  width: 35rem;
+}
+
+.cajaError .mensajeError {
+  width: 45rem;
+  height: auto;
+  align-self: center;
 }
 
 .parrafoError {

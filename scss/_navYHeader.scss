@@ -5,6 +5,8 @@
     width: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(117, 12, 10, 0.902));
     border-bottom: 3px solid white;
+    display: flex;
+    justify-content: space-between;
     
     .logoNavBar{
         width: 9rem;
@@ -13,14 +15,10 @@
     /*--Barras de Navegacion-- */
     .navBarMovible__barra {
         display: flex;
-        
-        #navbarNav{
-            display: flex;
-            justify-content: flex-end;
-        }
         .navBarMovible__botonMenuHamburguesa {
             background-color: white;
             font-size: 2rem;
+            
         }
 
         .navBarMovible__enLinea {
