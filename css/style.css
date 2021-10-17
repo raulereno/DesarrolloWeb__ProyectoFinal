@@ -226,23 +226,6 @@ html {
   transition: all 2s;
 }
 
-.containerSobreMi .containerBasquet__imgBasquet:hover, .containerSobreMi .containerBasquet__imgBasquet:hover, .containerSobreMi .containerBasquet__imgBasquet:hover, .containerSobreMi .containerBasquet__imgBasquet:hover,
-.containerSobreMi .containerDispositivos__imgDispositivos:hover,
-.containerSobreMi .containerDispositivos__imgDispositivos:hover,
-.containerSobreMi .containerDispositivos__imgDispositivos:hover,
-.containerSobreMi .containerDispositivos__imgDispositivos:hover,
-.containerSobreMi .containerTrekking__imgTrekking:hover,
-.containerSobreMi .containerTrekking__imgTrekking:hover,
-.containerSobreMi .containerTrekking__imgTrekking:hover,
-.containerSobreMi .containerTrekking__imgTrekking:hover,
-.containerSobreMi .containerDeporte__imgDeporte:hover,
-.containerSobreMi .containerDeporte__imgDeporte:hover,
-.containerSobreMi .containerDeporte__imgDeporte:hover,
-.containerSobreMi .containerDeporte__imgDeporte:hover {
-  transform: scale(1.1);
-  border: 4px solid white;
-}
-
 .containerSobreMi div {
   margin-bottom: 3rem;
   width: 100%;
@@ -252,6 +235,11 @@ html {
 .containerSobreMi div .containerSobreMi__containerDispositivos {
   display: flex;
   justify-content: space-around;
+}
+
+.containerSobreMi div .containerSobreMi__containerDispositivos:hover .containerDispositivos__imgDispositivos {
+  transform: scale(1.1);
+  border: 4px solid white;
 }
 
 .containerSobreMi div .containerSobreMi__containerDispositivos:hover .containerDispositivos__cita-tecnologia {
@@ -268,6 +256,11 @@ html {
 .containerSobreMi div .containerSobreMi__containerBasquet {
   display: flex;
   justify-content: space-around;
+}
+
+.containerSobreMi div .containerSobreMi__containerBasquet:hover .containerBasquet__imgBasquet {
+  transform: scale(1.1);
+  border: 4px solid white;
 }
 
 .containerSobreMi div .containerSobreMi__containerBasquet:hover .containerBasquet__cita-basquet {
@@ -292,6 +285,11 @@ html {
   justify-content: space-around;
 }
 
+.containerSobreMi div .containerSobreMi__containerTrekking:hover .containerTrekking__imgTrekking {
+  transform: scale(1.1);
+  border: 4px solid white;
+}
+
 .containerSobreMi div .containerSobreMi__containerTrekking:hover .containerTrekking__cita-senderismo {
   opacity: 1;
 }
@@ -306,6 +304,11 @@ html {
 .containerSobreMi div .containerSobreMi__containerDeporte {
   display: flex;
   justify-content: space-around;
+}
+
+.containerSobreMi div .containerSobreMi__containerDeporte:hover .containerDeporte__imgDeporte {
+  transform: scale(1.1);
+  border: 4px solid white;
 }
 
 .containerSobreMi div .containerSobreMi__containerDeporte:hover .containerDeporte__cita-deporte {
@@ -327,7 +330,6 @@ html {
   width: 40%;
 }
 
-/* ------------------------------------ */
 /*-------------PORTFOLIO---------------*/
 .tituloH1Portfolio {
   margin-top: 3rem;
@@ -483,75 +485,126 @@ html {
 .formulario .formulario__tituloH1 {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 50%;
   background-color: #424242;
   border-radius: 5px;
 }
 
 .formulario legend {
   font-size: 30px;
-  color: black;
-  font-weight: bold;
-  background-color: #C4C4C4;
+  color: white;
+  background-color: #420706;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .formulario input,
 .formulario select,
 .formulario label {
   font-size: 20px;
-  color: black;
+  color: white;
+  font-weight: 400;
 }
 
 .formulario .formulario__containerUno {
-  background-color: #C4C4C4;
+  background-color: #770c0a;
   margin-top: 1rem;
   padding: 2rem;
   border-radius: 8px;
   border: none;
 }
 
-.formulario .formulario__containerUno input {
+.formulario .formulario__containerUno div {
+  display: flex;
+}
+
+.formulario .formulario__containerUno div input {
+  background-color: #770c0a;
   margin: 1rem 0rem 2rem 1rem;
+  border: 0;
+  border-bottom: 2px solid #240403;
+  transition: all 0.3s;
+}
+
+.formulario .formulario__containerUno div input:focus {
+  outline: none;
+  transform: scale(1.1);
+  border: 0;
+  border-bottom: 2px solid white;
 }
 
 .formulario .formulario__containerDos {
   display: flex;
   flex-direction: column;
-  background-color: #C4C4C4;
+  background-color: #770c0a;
   margin-top: 1rem;
-  padding: 3rem;
+  padding: 5px 3rem 3rem 3rem;
   border-radius: 8px;
   border: none;
 }
 
 .formulario .formulario__containerDos label {
+  background-color: #420706;
+  border-radius: 8px;
   font-size: 3rem;
   font-weight: 500;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario .formulario__containerDos input {
+  background-color: #770c0a;
+  margin: 1rem 0rem 2rem 1rem;
+  border: 0;
+  border-bottom: 2px solid #240403;
+  transition: all 0.3s;
+}
+
+.formulario .formulario__containerDos input:focus {
+  outline: none;
+  transform: scale(1.05);
+  border: 0;
+  border-bottom: 2px solid white;
 }
 
 .formulario .formulario__containerDos .mensaje {
+  width: 400px;
+  height: 130px;
+  border: 2px solid #240403;
   resize: none;
+  font-size: 1.5rem;
+  transition: all 0.5s;
 }
 
-.formulario .formulario__llamada {
-  background-color: #C4C4C4;
-  margin-top: 2rem;
-  width: 64%;
-  font-weight: 600;
-  padding: 4px;
-  border-radius: 8px;
+.formulario .formulario__containerDos .mensaje:focus {
+  outline: none;
+  transform: scale(1.05);
+  border: 2px solid black;
 }
 
 .formulario .formulario__botonEnviar {
   display: flex;
   justify-content: flex-end;
+  margin-top: 1rem;
 }
 
 .formulario .formulario__botonEnviar input {
+  padding: 0px 5px;
+  border: 0;
+  color: white;
+  background-color: #770c0a;
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.formulario .formulario__botonEnviar input:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
 }
 
 /* ---------------------------------- */
