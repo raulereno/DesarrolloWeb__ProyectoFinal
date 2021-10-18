@@ -161,6 +161,27 @@ html {
   width: 50%;
 }
 
+.section .section__carrusel img {
+  min-width: 400px;
+  min-height: 250px;
+  max-width: 647px;
+  max-height: 600px;
+}
+
+.section .section__carrusel h5 a {
+  background-color: rgba(117, 12, 10, 0.902);
+  color: white;
+}
+
+.section .section__carrusel h5 a:hover {
+  color: #5959ff;
+}
+
+.section .section__carrusel p {
+  background-color: rgba(117, 12, 10, 0.902);
+  color: white;
+}
+
 .section .section__segundoParrafo {
   display: flex;
   justify-content: center;
@@ -414,6 +435,13 @@ html {
   width: 60%;
 }
 
+.imagenesPortfolio {
+  min-width: 400px;
+  min-height: 250px;
+  max-width: 550px;
+  max-height: 400px;
+}
+
 /*---------------FIN PORTFOLIO--------------------*/
 /*------------- SERVICIOS ------------ */
 .servicios {
@@ -432,7 +460,7 @@ html {
   width: 30rem;
   padding: 1rem;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   border-radius: 15px;
 }
 
@@ -451,7 +479,7 @@ html {
   font-size: 35px;
   color: black;
   background-color: rgba(192, 85, 85, 0.6);
-  margin-bottom: 15px;
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   border-radius: 5px;
@@ -730,7 +758,7 @@ footer .redesSociales a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
-  transition: all 2s;
+  transition: all 1.5s;
 }
 
 footer .redesSociales a img {

@@ -1,6 +1,7 @@
 /* ---------INDEX----------- */
 .section {
     margin: 1rem 0rem 1rem 4rem;
+
     .section__fotoMia {
         width: 25rem;
         height: 25rem;
@@ -22,6 +23,26 @@
     }
     .section__carrusel {
         width: 50%;
+        img{
+            min-width: 400px;
+            min-height: 250px;
+            max-width: 647px;
+            max-height: 600px;
+        }
+        h5{
+            a{
+                background-color:rgba(117, 12, 10, 0.902) ;
+                color: white;
+
+                &:hover{
+                    color: rgb(89, 89, 255);
+                }
+            }
+        }
+        p{
+            background-color:rgba(117, 12, 10, 0.902) ;
+            color: white;
+        }
     }
     .section__segundoParrafo{
         display: flex;
