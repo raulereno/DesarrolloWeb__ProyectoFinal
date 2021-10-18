@@ -858,6 +858,28 @@ footer p {
     justify-self: center;
     height: 5rem;
   }
+  .containerSobreMi div {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerSobreMi div div {
+    margin: 0;
+    width: 100%;
+  }
+  .containerSobreMi div div img {
+    width: 25rem;
+    height: auto;
+    align-self: center;
+  }
+  .containerSobreMi div div .citas {
+    margin-top: 2rem;
+    width: 95%;
+    font-size: 2.7em;
+  }
+  .containerSobreMi .containerTrekking__cita-senderismo,
+  .containerSobreMi .containerDeporte__cita-deporte {
+    order: 1;
+  }
   /*-------FIN SOBRE MI-------*/
   /* -----PORTFOLIO---------- */
   .tituloH1Portfolio {
@@ -946,10 +968,35 @@ footer p {
   }
   .containerSobreMi .containerSobreMi__tituloHobbies {
     padding: 0;
-    width: 50%;
+    width: 70%;
     align-self: center;
     display: flex;
     justify-content: center;
+  }
+  .containerSobreMi div {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .containerSobreMi div div {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+  }
+  .containerSobreMi div div img {
+    width: 25rem;
+    height: auto;
+    align-self: center;
+    margin: 2rem;
+  }
+  .containerSobreMi div div .citas {
+    width: 50%;
+    font-size: 2.3em;
+  }
+  .containerSobreMi .containerTrekking__cita-senderismo,
+  .containerSobreMi .containerDeporte__cita-deporte {
+    order: 1;
   }
   /* --------FIN SOBRE MI---------- */
   /* ------------PORTFOLIO-----------*/

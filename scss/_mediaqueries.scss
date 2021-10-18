@@ -3,17 +3,18 @@
     footer p {
         font-size: 1.4rem;
     }
+
     //---------INDEX-----//
-    .section{
+    .section {
         margin: 4px 6px;
 
         .section__carrusel {
             width: 100%;
             display: flex;
-            justify-self:flex-start;
+            justify-self: flex-start;
         }
     }
-    
+
     //-------------------//
     /*------ SOBRE MI--------- */
     .containerSobreMi {
@@ -29,12 +30,14 @@
             font-size: 4rem;
             height: 5rem;
         }
-        .containerSobreMi__seccionUno{
-            display:flex;
+
+        .containerSobreMi__seccionUno {
+            display: flex;
             flex-direction: column;
             width: 100%;
+
             .seccionUno__fotosMias {
-                width: 100% ;
+                width: 100%;
                 height: auto;
             }
 
@@ -42,12 +45,41 @@
                 width: 100%;
             }
         }
-    
+
         .containerSobreMi__tituloHobbies {
             justify-self: center;
             height: 5rem;
         }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                margin: 0;
+                width: 100%;
+
+                img {
+                    width: 25rem;
+                    height: auto;
+                    align-self: center;
+                }
+
+                .citas {
+                    margin-top: 2rem;
+                    width: 95%;
+                    font-size: 2.7em;
+                }
+            }
+        }
+
+        //arreglando orden
+        .containerTrekking__cita-senderismo,
+        .containerDeporte__cita-deporte {
+            order: 1;
+        }
     }
+
     /*-------FIN SOBRE MI-------*/
     /* -----PORTFOLIO---------- */
     .tituloH1Portfolio {
@@ -68,10 +100,10 @@
     .containerProyectoDos .containerProyectoDos__parrafo,
     .containerProyectoTres .containerProyectoTres__parrafo {
         width: 100%;
-        margin:0;
+        margin: 0;
     }
 
-    .imagenesPortfolio{
+    .imagenesPortfolio {
         width: 80%;
         justify-self: flex-start;
     }
@@ -91,25 +123,26 @@
             width: 100%;
             border-radius: 0;
         }
-    
+
         .servicios__servicioUno,
         .servicios__servicioDos {
             width: 100%;
             border: none;
         }
-        .servicios__servicioUno{
+
+        .servicios__servicioUno {
             border-bottom: 1rem solid rgba(192, 85, 85, .5);
         }
     }
 
     /*-------FIN SERVICIOS-----*/
     //--------CONTACTO--------//
-    .formulario{
-        .formulario__llamada{
+    .formulario {
+        .formulario__llamada {
             width: 80%;
         }
     }
-        
+
 
 
 
@@ -119,51 +152,82 @@
 /* -------------------------------------------- */
 /*------ Diseño DE 600-1024px ------*/
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-   
+
     footer p {
         font-size: 1.5rem;
     }
-    
+
     //---------INDEX-----//
-    .section{
+    .section {
         margin: 1rem;
 
         .section__carrusel {
             width: 80%;
         }
     }
-    
+
     //-------------------//
     /*----- SOBRE MI -----*/
     .containerSobreMi {
         display: flex;
         flex-direction: column;
-        
+
         .containerSobreMi__titulo {
             height: 4.5rem;
             padding: 2px 0px 6px 3px;
             align-self: center;
         }
-        
-        .containerSobreMi__seccionUno{
+
+        .containerSobreMi__seccionUno {
             display: flex;
             flex-direction: column;
+
             .seccionUno__fotosMias {
                 align-self: center;
                 width: 80%;
             }
-        
+
             .seccionUno__parrafoSobreMi {
                 width: 90%;
             }
         }
-    
+
         .containerSobreMi__tituloHobbies {
             padding: 0;
-            width: 50%;
+            width: 70%;
             align-self: center;
             display: flex;
             justify-content: center;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin:0;
+            div {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                width: 100%;
+
+                img {
+                    width: 25rem;
+                    height: auto;
+                    align-self: center;
+                    margin: 2rem;
+                }
+
+                .citas {
+                    width: 50%;
+                    font-size: 2.3em;
+                }
+            }
+        }
+
+        //arreglando orden
+        .containerTrekking__cita-senderismo,
+        .containerDeporte__cita-deporte {
+            order: 1;
         }
     }
 
