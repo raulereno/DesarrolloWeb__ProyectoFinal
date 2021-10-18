@@ -17,22 +17,11 @@
     //-------------------//
     /*------ SOBRE MI--------- */
     .containerSobreMi {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: .5fr 3fr 5fr .5fr 2.5fr 2.5fr 2.5fr 2.5fr;
-        grid-template-areas:
-            "titulo1 titulo1"
-            "imagen1 imagen1"
-            "texto1 texto1"
-            "titulo2 titulo2"
-            "imagen2 imagen2"
-            "imagen3 imagen3"
-            "imagen4 imagen4"
-            "imagen5 imagen5"
-        ;
+        display: flex;
+        flex-direction: column;
 
         .containerSobreMi__titulo {
-            margin-top: 1rem;
+            margin-top: 2rem;
             display: flex;
             justify-content: center;
             padding: 0rem;
@@ -40,14 +29,18 @@
             font-size: 4rem;
             height: 5rem;
         }
-    
-        .containerSobreMi__fotosMias {
+        .containerSobreMi__seccionUno{
+            display:flex;
+            flex-direction: column;
             width: 100%;
-            height: auto;
-        }
-    
-        .containerSobreMi__parrafoSobreMi {
-            width: 100%;
+            .seccionUno__fotosMias {
+                width: 100% ;
+                height: auto;
+            }
+
+            .seccionUno__parrafoSobreMi {
+                width: 100%;
+            }
         }
     
         .containerSobreMi__tituloHobbies {
@@ -143,34 +136,34 @@
     //-------------------//
     /*----- SOBRE MI -----*/
     .containerSobreMi {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 4fr 5fr 1fr 3.5fr 3.5fr;
-        grid-template-areas:
-            "titulo1 titulo1"
-            "imagen1 imagen1"
-            "texto1 texto1"
-            "titulo2 titulo2"
-            "imagen2 imagen3"
-            "imagen4 imagen5"
-        ;
+        display: flex;
+        flex-direction: column;
         
         .containerSobreMi__titulo {
             height: 4.5rem;
             padding: 2px 0px 6px 3px;
             align-self: center;
         }
-    
-        .containerSobreMi__fotosMias {
-            justify-self: center;
-        }
-    
-        .containerSobreMi__parrafoSobreMi {
-            width: 75%;
+        
+        .containerSobreMi__seccionUno{
+            display: flex;
+            flex-direction: column;
+            .seccionUno__fotosMias {
+                align-self: center;
+                width: 80%;
+            }
+        
+            .seccionUno__parrafoSobreMi {
+                width: 90%;
+            }
         }
     
         .containerSobreMi__tituloHobbies {
-            justify-self: center;
+            padding: 0;
+            width: 50%;
+            align-self: center;
+            display: flex;
+            justify-content: center;
         }
     }
 
