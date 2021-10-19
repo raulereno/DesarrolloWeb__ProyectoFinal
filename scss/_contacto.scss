@@ -22,6 +22,7 @@
         display: flex;
         justify-content: center;
     }
+
     input,
     select,
     label {
@@ -38,68 +39,72 @@
         border: none;
         display: flex;
         flex-direction: column;
-        
-        
-        div{
+
+
+        div {
             display: flex;
-            
-           input {
-                background-color:#770c0a ;
+
+            input {
+                background-color: #770c0a;
                 margin: 1rem 0rem 2rem 1rem;
                 border: 0;
-                border-bottom:2px solid #240403;
+                border-bottom: 2px solid #240403;
                 transition: all 0.3s;
-                
-                &:focus{
+
+                &:focus {
                     outline: none;
                     transform: scale(1.1);
                     border: 0;
-                    border-bottom:2px solid white;
+                    border-bottom: 2px solid white;
                 }
             }
         }
 
     }
+
     .formulario__containerDos {
         display: flex;
         flex-direction: column;
         background-color: #770c0a;
         margin-top: 1rem;
-        padding: 5px 3rem 3rem 3rem ;
+        padding: 5px 3rem 3rem 3rem;
         border-radius: 8px;
         border: none;
 
-        label{
+        label {
             background-color: #420706;
             border-radius: 8px;
             font-size: 3rem;
-            font-weight:500 ;
+            font-weight: 500;
             margin: 1rem;
             display: flex;
             justify-content: center;
         }
+
         input {
-            background-color:#770c0a ;
+            background-color: #770c0a;
             margin: 1rem 0rem 2rem 1rem;
             border: 0;
-            border-bottom:2px solid #240403;
+            border-bottom: 2px solid #240403;
             transition: all 0.3s;
-            
-            &:focus{
+
+            &:focus {
                 outline: none;
                 transform: scale(1.05);
                 border: 0;
-                border-bottom:2px solid white;
+                border-bottom: 2px solid white;
             }
         }
-        .mensaje{
-            width:400px;
-            height:130px;
-            border:2px solid #240403;
+
+        .mensaje {
+            width: 400px;
+            height: 130px;
+            border: 2px solid #240403;
             resize: none;
             font-size: 1.5rem;
             transition: all 0.5s;
-            &:focus{
+
+            &:focus {
                 outline: none;
                 transform: scale(1.05);
                 border: 2px solid black;
@@ -107,15 +112,15 @@
         }
 
     }
-    
+
     .formulario__botonEnviar {
         display: flex;
         justify-content: flex-end;
         margin-top: 1rem;
-        
+
         input {
             padding: 0px 5px;
-            border:0;
+            border: 0;
             color: white;
             background-color: #770c0a;
             font-size: 2.5rem;
@@ -123,13 +128,14 @@
             border-radius: 4px;
             transition: all 0.5s;
 
-            &:hover{
+            &:hover {
                 background-color: white;
                 color: black;
                 transform: scale(1.1);
             }
         }
-        
+
     }
 }
+
 /* ---------------------------------- */

@@ -10,7 +10,7 @@
     .banner {
         display: flex;
         flex-direction: column;
-        
+
         p,
         span {
             font-size: 4rem;
@@ -18,24 +18,27 @@
             font-family: Aleo;
             font-weight: 300;
         }
-        .caja-negra{
+
+        .caja-negra {
             background-color: black;
             height: 5rem;
             width: 30rem;
             align-self: center;
             margin-bottom: 9px;
         }
-        &:hover .maquina-escribir{
+
+        &:hover .maquina-escribir {
             visibility: visible;
         }
-        .maquina-escribir{
-            color:white;
+
+        .maquina-escribir {
+            color: white;
             background-color: black;
             position: relative;
             visibility: hidden;
             padding-left: 2.5rem;
-             
-            &::after{
+
+            &::after {
                 content: "";
                 border-left: 3px solid #770c0a;
                 background-color: black;
@@ -43,10 +46,11 @@
                 height: 105%;
                 position: absolute;
                 animation: maquinaescribir 3s infinite alternate steps(17);
-            }            
+            }
         }
     }
 }
+
 .footerError {
     display: flex;
     justify-content: center;
@@ -65,12 +69,13 @@
         width: 35rem;
     }
 
-    .mensajeError{
+    .mensajeError {
         width: 45rem;
         height: auto;
         align-self: center;
     }
 }
+
 .parrafoError {
     display: flex;
     justify-content: center;

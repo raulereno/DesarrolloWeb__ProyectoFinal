@@ -10,43 +10,49 @@
         padding: 0;
         margin-bottom: 2rem;
     }
-    
+
     .section__fotoMia:hover {
         width: 26rem;
         height: 26rem;
         border: 4px solid white;
     }
-    
+
     .section__tituloResumenPortfolio {
         padding-left: 4rem;
         background-color: rgba(129, 129, 129, 0.4);
     }
+
     .section__carrusel {
         width: 50%;
-        img{
+
+        img {
             min-width: 400px;
             min-height: 250px;
             max-width: 647px;
             max-height: 600px;
         }
-        h5{
-            a{
-                background-color:rgba(117, 12, 10, 0.902) ;
+
+        h5 {
+            a {
+                background-color: rgba(117, 12, 10, 0.902);
                 color: white;
 
-                &:hover{
+                &:hover {
                     color: rgb(89, 89, 255);
                 }
             }
         }
-        p{
-            background-color:rgba(117, 12, 10, 0.902) ;
+
+        p {
+            background-color: rgba(117, 12, 10, 0.902);
             color: white;
         }
     }
-    .section__segundoParrafo{
+
+    .section__segundoParrafo {
         display: flex;
         justify-content: center;
     }
 }
+
 /*---------------------------*/

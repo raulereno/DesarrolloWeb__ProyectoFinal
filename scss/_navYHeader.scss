@@ -7,18 +7,20 @@
     border-bottom: 3px solid white;
     display: flex;
     justify-content: space-between;
-    
-    .logoNavBar{
+
+    .logoNavBar {
         width: 9rem;
         height: 8rem;
     }
+
     /*--Barras de Navegacion-- */
     .navBarMovible__barra {
         display: flex;
+
         .navBarMovible__botonMenuHamburguesa {
             background-color: white;
             font-size: 2rem;
-            
+
         }
 
         .navBarMovible__enLinea {
@@ -50,7 +52,7 @@
         }
     }
 
-    
+
 }
 
 
@@ -68,7 +70,7 @@
     .banner {
         display: flex;
         flex-direction: column;
-        
+
         p,
         span {
             font-size: 7rem;
@@ -76,24 +78,27 @@
             font-family: Aleo;
             font-weight: 300;
         }
-        .caja-negra{
+
+        .caja-negra {
             background-color: black;
             height: 9rem;
             width: 48rem;
             align-self: center;
             margin-bottom: 9px;
         }
-        &:hover .maquina-escribir{
+
+        &:hover .maquina-escribir {
             visibility: visible;
         }
-        .maquina-escribir{
-            color:white;
+
+        .maquina-escribir {
+            color: white;
             background-color: black;
             position: relative;
             visibility: hidden;
             padding-left: 2.5rem;
-             
-            &::after{
+
+            &::after {
                 content: "";
                 border-left: 3px solid #770c0a;
                 background-color: black;
@@ -101,16 +106,19 @@
                 height: 105%;
                 position: absolute;
                 animation: maquinaescribir 3s infinite alternate steps(17);
-            }            
+            }
         }
     }
 }
-@keyframes maquinaescribir{
-    from{
+
+@keyframes maquinaescribir {
+    from {
         width: 100%;
     }
-    to{
+
+    to {
         width: 0;
     }
 }
+
 /*-------------- FIN HEADERS------------ */

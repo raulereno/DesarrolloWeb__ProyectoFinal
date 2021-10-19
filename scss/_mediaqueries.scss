@@ -1,48 +1,52 @@
 /* Diseño HASTA 600px */
 @media only screen and (max-width:600px) {
     footer {
-        .redesSociales{
+        .redesSociales {
             flex-direction: column;
             align-items: center;
         }
-        
-        p{
-        font-size: 1.2rem;
+
+        p {
+            font-size: 1.2rem;
         }
     }
 
     //------BANNER-------//
-    .header{
-        .banner{
+    .header {
+        .banner {
+
             p,
-            span{
+            span {
                 font-size: 4rem;
             }
 
-            .caja-negra{
+            .caja-negra {
                 width: 29rem;
                 height: 5rem;
                 display: flex;
                 justify-content: center;
-                
-                .maquina-escribir{
-                    &::after{
-                        height: 100% ;
+
+                .maquina-escribir {
+                    &::after {
+                        height: 100%;
                     }
                 }
             }
         }
     }
+
     //---------INDEX-----//
     .section {
         margin: 4px 6px;
-        .section__tituloResumenPortfolio{
+
+        .section__tituloResumenPortfolio {
             display: flex;
             justify-content: center;
             padding: 0;
             width: 90%;
             font-size: 3.1rem;
         }
+
         .section__carrusel {
             width: 100%;
             display: flex;
@@ -78,7 +82,7 @@
 
             .seccionUno__parrafoSobreMi {
                 width: 95%;
-                margin:5px;
+                margin: 5px;
             }
         }
 
@@ -119,7 +123,7 @@
     /*-------FIN SOBRE MI-------*/
     /* -----PORTFOLIO---------- */
     .tituloH1Portfolio {
-        
+
         width: 90%;
         display: flex;
         justify-content: center;
@@ -169,7 +173,8 @@
         .servicios__servicioDos {
             width: 100%;
             border: none;
-            p{
+
+            p {
                 width: 95%;
             }
         }
@@ -182,40 +187,44 @@
             width: 80%;
         }
     }
-    
+
 
     /*-------FIN SERVICIOS-----*/
     //--------CONTACTO--------//
     .formulario {
-        .formulario__tituloH1{
+        .formulario__tituloH1 {
             width: 90%;
         }
-        .formulario__containerUno{
+
+        .formulario__containerUno {
             width: 100%;
-            margin:0;
-            
-            
-            legend{
+            margin: 0;
+
+
+            legend {
                 font-size: 2.5rem;
                 width: 100%;
                 align-self: center;
             }
-            
-            div{
-               justify-content: center;
-           }
+
+            div {
+                justify-content: center;
+            }
         }
-        .formulario__containerDos{
+
+        .formulario__containerDos {
             width: 100%;
-            
-            label{
+
+            label {
                 width: 95%;
                 font-size: 2.5rem;
             }
-            input{
+
+            input {
                 font-size: 1.5rem;
             }
-            .mensaje{
+
+            .mensaje {
                 width: 250px;
                 height: 200px;
             }
@@ -223,8 +232,8 @@
     }
 
 
-    
-    
+
+
     //--------FIN CONTACTO-----//
 }
 
@@ -242,11 +251,11 @@
 
         .section__carrusel {
             width: 80%;
-            
-            img{
+
+            img {
                 max-width: none;
             }
-           
+
         }
     }
 
@@ -287,7 +296,8 @@
         div {
             display: flex;
             flex-direction: column;
-            margin:0;
+            margin: 0;
+
             div {
                 display: flex;
                 flex-direction: row;
@@ -332,8 +342,9 @@
 
     /*--------FIN PORTFOLIO---------- */
     /*---------- SERVICIOS ----------*/
-        
-    .servicios{
+
+    .servicios {
+
         .servicios__titulosH2Uno,
         .servicios__titulosH2Dos {
             width: 90%;
@@ -350,5 +361,6 @@
 
         }
     }
+
     /*--------- FIN SERVICIOS-------- */
 }

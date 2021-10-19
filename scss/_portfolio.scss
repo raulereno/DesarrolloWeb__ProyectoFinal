@@ -37,7 +37,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2rem;
-    
+
     .containerProyectoDos__titulosH2 {
         font-size: 35px;
         color: white;
@@ -47,6 +47,7 @@
         border-radius: 5px;
         width: 80%
     }
+
     .containerProyectoDos__parrafo {
         width: 50%;
         align-self: center;
@@ -75,15 +76,17 @@
         margin-left: 5rem;
     }
 }
+
 .containerProyectoDos h2,
 .containerProyectoUno h2 {
     width: 60%;
 }
 
-.imagenesPortfolio{
+.imagenesPortfolio {
     min-width: 400px;
     min-height: 250px;
     max-width: 550px;
     max-height: 400px;
 }
+
 /*---------------FIN PORTFOLIO--------------------*/
