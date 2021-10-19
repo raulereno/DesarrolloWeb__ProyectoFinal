@@ -1,17 +1,52 @@
 /* Diseño HASTA 600px */
 @media only screen and (max-width:600px) {
-    footer p {
-        font-size: 1.4rem;
+    footer {
+        .redesSociales{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        p{
+        font-size: 1.2rem;
+        }
     }
 
+    //------BANNER-------//
+    .header{
+        .banner{
+            p,
+            span{
+                font-size: 4rem;
+            }
+
+            .caja-negra{
+                width: 29rem;
+                height: 5rem;
+                display: flex;
+                justify-content: center;
+                
+                .maquina-escribir{
+                    &::after{
+                        height: 100% ;
+                    }
+                }
+            }
+        }
+    }
     //---------INDEX-----//
     .section {
         margin: 4px 6px;
-
+        .section__tituloResumenPortfolio{
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            width: 90%;
+            font-size: 3.1rem;
+        }
         .section__carrusel {
             width: 100%;
             display: flex;
-            justify-self: flex-start;
+            justify-content: center;
         }
     }
 
@@ -42,7 +77,8 @@
             }
 
             .seccionUno__parrafoSobreMi {
-                width: 100%;
+                width: 95%;
+                margin:5px;
             }
         }
 
@@ -83,28 +119,33 @@
     /*-------FIN SOBRE MI-------*/
     /* -----PORTFOLIO---------- */
     .tituloH1Portfolio {
-        margin: 0px;
-        width: 80%;
+        
+        width: 90%;
         display: flex;
         justify-content: center;
-        margin: 0rem 0rem 1.5rem 2rem;
+        margin: 1rem 0rem 1.5rem 2rem;
+        padding: 0;
     }
 
     .containerProyectoUno .containerProyectoUno__titulosH2,
     .containerProyectoDos .containerProyectoDos__titulosH2,
     .containerProyectoTres .containerProyectoTres__titulosH2 {
         width: 100%;
+        font-size: 3rem;
     }
 
     .containerProyectoUno .containerProyectoUno__parrafo,
     .containerProyectoDos .containerProyectoDos__parrafo,
     .containerProyectoTres .containerProyectoTres__parrafo {
         width: 100%;
-        margin: 0;
+        margin: 2px;
     }
 
     .imagenesPortfolio {
-        width: 80%;
+        min-width: 300px;
+        min-height: 300px;
+        width: 33rem;
+        height: auto;
         justify-self: flex-start;
     }
 
@@ -128,24 +169,62 @@
         .servicios__servicioDos {
             width: 100%;
             border: none;
+            p{
+                width: 95%;
+            }
         }
 
         .servicios__servicioUno {
             border-bottom: 1rem solid rgba(192, 85, 85, .5);
         }
+
+        img {
+            width: 80%;
+        }
     }
+    
 
     /*-------FIN SERVICIOS-----*/
     //--------CONTACTO--------//
     .formulario {
-        .formulario__llamada {
-            width: 80%;
+        .formulario__tituloH1{
+            width: 90%;
+        }
+        .formulario__containerUno{
+            width: 100%;
+            margin:0;
+            
+            
+            legend{
+                font-size: 2.5rem;
+                width: 100%;
+                align-self: center;
+            }
+            
+            div{
+               justify-content: center;
+           }
+        }
+        .formulario__containerDos{
+            width: 100%;
+            
+            label{
+                width: 95%;
+                font-size: 2.5rem;
+            }
+            input{
+                font-size: 1.5rem;
+            }
+            .mensaje{
+                width: 250px;
+                height: 200px;
+            }
         }
     }
 
 
-
-
+    
+    
     //--------FIN CONTACTO-----//
 }
 
@@ -163,6 +242,11 @@
 
         .section__carrusel {
             width: 80%;
+            
+            img{
+                max-width: none;
+            }
+           
         }
     }
 
@@ -248,18 +332,23 @@
 
     /*--------FIN PORTFOLIO---------- */
     /*---------- SERVICIOS ----------*/
-    .titulosH2Servicios {
-        width: 90%;
-    }
+        
+    .servicios{
+        .servicios__titulosH2Uno,
+        .servicios__titulosH2Dos {
+            width: 90%;
+        }
 
-    .flexContainerServicios p {
-        width: 80%;
-    }
+        .servicios__descripcionUno,
+        .servicios__descripcionDos {
+            width: 90%;
+        }
 
-    .flexContainerServicios img {
-        width: 60%;
-        height: auto;
-    }
+        img {
+            width: 60%;
+            height: auto;
 
+        }
+    }
     /*--------- FIN SERVICIOS-------- */
 }

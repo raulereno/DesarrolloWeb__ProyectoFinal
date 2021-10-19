@@ -92,7 +92,7 @@ html {
   font-weight: 300;
 }
 
-.header .banner .caja-blanca {
+.header .banner .caja-negra {
   background-color: black;
   height: 9rem;
   width: 48rem;
@@ -134,7 +134,7 @@ html {
 /*-------------- FIN HEADERS------------ */
 /* ---------INDEX----------- */
 .section {
-  margin: 1rem 0rem 1rem 4rem;
+  margin: 2rem 0rem 1rem 4rem;
 }
 
 .section .section__fotoMia {
@@ -258,6 +258,10 @@ html {
   justify-content: space-around;
 }
 
+.containerSobreMi div .containerSobreMi__containerDispositivos .containerDispositivos__imgDispositivos {
+  margin-left: 3rem;
+}
+
 .containerSobreMi div .containerSobreMi__containerDispositivos:hover .containerDispositivos__imgDispositivos {
   transform: scale(1.1);
   border: 4px solid white;
@@ -320,6 +324,7 @@ html {
   text-align: center;
   opacity: 0;
   transition: opacity 1s linear;
+  margin-left: 3rem;
 }
 
 .containerSobreMi div .containerSobreMi__containerDeporte {
@@ -519,7 +524,7 @@ html {
 }
 
 .formulario legend {
-  font-size: 30px;
+  font-size: 3rem;
   color: white;
   background-color: #420706;
   border-radius: 8px;
@@ -530,7 +535,7 @@ html {
 .formulario input,
 .formulario select,
 .formulario label {
-  font-size: 20px;
+  font-size: 2rem;
   color: white;
   font-weight: 400;
 }
@@ -541,6 +546,8 @@ html {
   padding: 2rem;
   border-radius: 8px;
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .formulario .formulario__containerUno div {
@@ -817,16 +824,40 @@ footer p {
 /* ----------------------- */
 /* Diseño HASTA 600px */
 @media only screen and (max-width: 600px) {
+  footer .redesSociales {
+    flex-direction: column;
+    align-items: center;
+  }
   footer p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+  .header .banner p,
+  .header .banner span {
+    font-size: 4rem;
+  }
+  .header .banner .caja-negra {
+    width: 29rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .header .banner .caja-negra .maquina-escribir::after {
+    height: 100%;
   }
   .section {
     margin: 4px 6px;
   }
+  .section .section__tituloResumenPortfolio {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 90%;
+    font-size: 3.1rem;
+  }
   .section .section__carrusel {
     width: 100%;
     display: flex;
-    justify-self: flex-start;
+    justify-content: center;
   }
   /*------ SOBRE MI--------- */
   .containerSobreMi {
@@ -852,7 +883,8 @@ footer p {
     height: auto;
   }
   .containerSobreMi .containerSobreMi__seccionUno .seccionUno__parrafoSobreMi {
-    width: 100%;
+    width: 95%;
+    margin: 5px;
   }
   .containerSobreMi .containerSobreMi__tituloHobbies {
     justify-self: center;
@@ -883,25 +915,29 @@ footer p {
   /*-------FIN SOBRE MI-------*/
   /* -----PORTFOLIO---------- */
   .tituloH1Portfolio {
-    margin: 0px;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
-    margin: 0rem 0rem 1.5rem 2rem;
+    margin: 1rem 0rem 1.5rem 2rem;
+    padding: 0;
   }
   .containerProyectoUno .containerProyectoUno__titulosH2,
   .containerProyectoDos .containerProyectoDos__titulosH2,
   .containerProyectoTres .containerProyectoTres__titulosH2 {
     width: 100%;
+    font-size: 3rem;
   }
   .containerProyectoUno .containerProyectoUno__parrafo,
   .containerProyectoDos .containerProyectoDos__parrafo,
   .containerProyectoTres .containerProyectoTres__parrafo {
     width: 100%;
-    margin: 0;
+    margin: 2px;
   }
   .imagenesPortfolio {
-    width: 80%;
+    min-width: 300px;
+    min-height: 300px;
+    width: 33rem;
+    height: auto;
     justify-self: flex-start;
   }
   /* ------FIN PORTFOLIO----- */
@@ -924,12 +960,45 @@ footer p {
     width: 100%;
     border: none;
   }
+  .servicios .servicios__servicioUno p,
+  .servicios .servicios__servicioDos p {
+    width: 95%;
+  }
   .servicios .servicios__servicioUno {
     border-bottom: 1rem solid rgba(192, 85, 85, 0.5);
   }
-  /*-------FIN SERVICIOS-----*/
-  .formulario .formulario__llamada {
+  .servicios img {
     width: 80%;
+  }
+  /*-------FIN SERVICIOS-----*/
+  .formulario .formulario__tituloH1 {
+    width: 90%;
+  }
+  .formulario .formulario__containerUno {
+    width: 100%;
+    margin: 0;
+  }
+  .formulario .formulario__containerUno legend {
+    font-size: 2.5rem;
+    width: 100%;
+    align-self: center;
+  }
+  .formulario .formulario__containerUno div {
+    justify-content: center;
+  }
+  .formulario .formulario__containerDos {
+    width: 100%;
+  }
+  .formulario .formulario__containerDos label {
+    width: 95%;
+    font-size: 2.5rem;
+  }
+  .formulario .formulario__containerDos input {
+    font-size: 1.5rem;
+  }
+  .formulario .formulario__containerDos .mensaje {
+    width: 250px;
+    height: 200px;
   }
 }
 
@@ -944,6 +1013,9 @@ footer p {
   }
   .section .section__carrusel {
     width: 80%;
+  }
+  .section .section__carrusel img {
+    max-width: none;
   }
   /*----- SOBRE MI -----*/
   .containerSobreMi {
@@ -1013,13 +1085,15 @@ footer p {
   }
   /*--------FIN PORTFOLIO---------- */
   /*---------- SERVICIOS ----------*/
-  .titulosH2Servicios {
+  .servicios .servicios__titulosH2Uno,
+  .servicios .servicios__titulosH2Dos {
     width: 90%;
   }
-  .flexContainerServicios p {
-    width: 80%;
+  .servicios .servicios__descripcionUno,
+  .servicios .servicios__descripcionDos {
+    width: 90%;
   }
-  .flexContainerServicios img {
+  .servicios img {
     width: 60%;
     height: auto;
   }
