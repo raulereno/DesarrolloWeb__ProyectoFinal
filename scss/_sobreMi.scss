@@ -32,16 +32,19 @@
 
         .seccionUno__fotosMias:hover {
             border: 4px solid white;
+            transform: scale(1.05);
         }
     }
 
     .containerSobreMi__tituloHobbies {
+        display: flex;
+        justify-content: center;
         align-self: center;
         background-color: #9b3737;
         width: 60%;
         font-size: 4rem;
-        padding-left: 6rem;
         color: rgb(255, 255, 255);
+        padding: 0;
         margin-bottom: 3rem;
     }
 
