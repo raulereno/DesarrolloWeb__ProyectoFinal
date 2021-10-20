@@ -443,11 +443,6 @@ html {
   margin-left: 2rem;
 }
 
-.containerProyectoTres .imagenesPortfolio {
-  width: 600px;
-  height: 450px;
-}
-
 .containerProyectoDos h2,
 .containerProyectoUno h2 {
   width: 60%;
@@ -948,9 +943,9 @@ footer p {
     margin: 2px;
   }
   .imagenesPortfolio {
-    min-width: 300px;
-    min-height: 300px;
-    width: 33rem;
+    min-width: 250px;
+    min-height: 150px;
+    width: 90%;
     height: auto;
     justify-self: flex-start;
   }
